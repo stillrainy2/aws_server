@@ -1653,6 +1653,16 @@
 
 	}
 
+	header.minor {
+		margin: 0 0 3.5em 0;
+	}
+
+		header.minor h2, header.minor h3, header.minor h4, header.minor h5, header.minor h6 {
+			display: inline-block;
+			position: relative;
+		}
+
+
 /* Form */
 
 	form {
@@ -1933,6 +1943,13 @@
 			color: #76ddff;
 		}
 
+		.icon.style4 {
+			color: #FF7676;
+		}
+
+		.icon.style5 {
+			color: #FFFFFF;
+		}
 /* Image */
 
 	.image {
