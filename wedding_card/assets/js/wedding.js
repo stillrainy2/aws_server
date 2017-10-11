@@ -1,4 +1,4 @@
-var countDownDate = new Date("November 11, 2017 00:00:00").getTime(); 
+var countDownDate = new Date("November 12, 2017 00:00:00").getTime(); 
 //1초마다 갱신되도록 함수 생성,실행 
 
 // 오늘 날짜 등록 
@@ -11,7 +11,14 @@ var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
 var s = Math.floor((distance % (1000 * 60)) / 1000); 
 //id가 d-day인 HTML코드에 내용 삽입 
-document.getElementById("d-day").innerHTML = "D - " + d;
+if (d > 0){
+  document.getElementById("d-day").innerHTML = "D - " + d;
+}
+else
+{
+  document.getElementById("d-day").innerHTML = "D - Day";
+}
+
 
 
  
